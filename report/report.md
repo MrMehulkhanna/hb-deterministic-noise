@@ -1,6 +1,6 @@
 # Spectral Leakage and Repeated Bernstein–Vazirani Key Recovery under Deterministic, Input-Dependent Noise
 
-**[Researcher name]**, B.E. Robotics and Artificial Intelligence, Thapar Institute of Engineering and Technology
+**Mehul Khanna**, B.E. Robotics and Artificial Intelligence, Thapar Institute of Engineering and Technology
 Technical report, not peer reviewed · Status: **control framework verified; published-construction experiment pending** · 8 October 2026
 
 ## 2. Abstract

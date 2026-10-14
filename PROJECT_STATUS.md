@@ -21,7 +21,7 @@
 - [x] report rebuilt (control stage; §11 marked pending)
 - [x] tests pass (15/15)
 - [x] one-command reproduction works (about 35 s; manifest)
-- [x] GitHub release assets prepared (README, CI, CITATION, CHANGELOG, .gitignore). Repo not yet created
+- [x] GitHub repository published with README, CI, CITATION, CHANGELOG and .gitignore (CI passing)
 - [x] Zenodo metadata prepared (`submission/.zenodo.json`, filled; MIT licence)
 - [x] OSF registration decision documented (`submission/OSF_DECISION.md`)
 - [ ] ePrint manuscript package: **not appropriate yet** (`submission/EPRINT_CHECKLIST.md`)

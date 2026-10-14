@@ -41,4 +41,4 @@ python tests/test_core.py && python reproduce.py     # about 35 s, writes output
 C. Cid, D. Elkouss, M. Goulão, *Superposition Attacks Against LPN-Based Authentication Protocols*, IACR Communications in Cryptology 3(1), 2026. doi:10.62056/abhey7n4e
 
 ## Citation and license
-See `CITATION.cff`. The license is to be chosen by the author (open item 6).
+MIT License (see [LICENSE](LICENSE)). To cite this work, use [CITATION.cff](CITATION.cff).
