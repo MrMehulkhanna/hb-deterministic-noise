@@ -1,0 +1,8 @@
+{
+  "python": "3.14.7",
+  "platform": "Linux-7.2.7-arch1-1-x86_64-with-glibc2.44",
+  "machine": "x86_64",
+  "numpy": "2.5.3",
+  "pandas": "3.0.6",
+  "matplotlib": "3.11.2"
+}

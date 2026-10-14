@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it as below."
+title: "Spectral Leakage and Repeated Bernstein-Vazirani Key Recovery under Deterministic, Input-Dependent Noise"
+type: software
+authors:
+  - family-names: "Khanna"
+    given-names: "Mehul"
+version: "0.2.0-controls"
+license: "MIT"
+repository-code: "https://github.com/MrMehulkhanna/hb-deterministic-noise"
+abstract: "Exact Walsh-spectrum analysis and finite control experiments for Bernstein-Vazirani key recovery against deterministic, input-dependent noise under an idealised Q2 phase oracle. Published deterministic-LPN construction experiment pending."
+keywords: [LPN, superposition attacks, Bernstein-Vazirani, Q2, Walsh spectrum, deterministic LPN]

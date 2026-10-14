@@ -1,0 +1,105 @@
+{
+  "A_bernoulli_min_p_key": 1.0,
+  "B": {
+    "rows": 80,
+    "mean_p_key": 0.415548,
+    "min_gap": 0.006104,
+    "positive_gap_pct": 100.0,
+    "max_abs_identity_error": 1.9984014443252818e-15,
+    "k99_not_reached_rows": 8
+  },
+  "C": {
+    "rows": 80,
+    "mean_p_key": 0.415548,
+    "min_gap": -0.006592,
+    "positive_gap_pct": 93.8,
+    "max_abs_identity_error": 1.7763568394002505e-15,
+    "k99_not_reached_rows": 10
+  },
+  "canonical_n10_C_keyed_research_control_NOT_PRF": {
+    "secret_bits": "0000101101",
+    "realised_tau": 0.25,
+    "p_key": 0.2499999999999995,
+    "p_competitor": 0.011962890624999976,
+    "spectral_gap": 0.23803710937499953,
+    "k99": "51",
+    "sufficient_bound": 431.6432296023527,
+    "trials": 300,
+    "seed": 144
+  },
+  "canonical_n10_B_random_fixed_weight": {
+    "secret_bits": "0000101101",
+    "realised_tau": 0.25,
+    "p_key": 0.2499999999999995,
+    "p_competitor": 0.01112365722656248,
+    "spectral_gap": 0.23887634277343703,
+    "k99": "51",
+    "sufficient_bound": 428.61561227456554,
+    "trials": 300,
+    "seed": 144
+  },
+  "D_AND2_success_by_k": [
+    {
+      "queries": 1,
+      "p_unique_mode_secret": 0.2495,
+      "p_tie": 0.0
+    },
+    {
+      "queries": 25,
+      "p_unique_mode_secret": 0.184,
+      "p_tie": 0.178
+    },
+    {
+      "queries": 101,
+      "p_unique_mode_secret": 0.2365,
+      "p_tie": 0.096
+    },
+    {
+      "queries": 401,
+      "p_unique_mode_secret": 0.244,
+      "p_tie": 0.059
+    }
+  ],
+  "F_depolarising": [
+    {
+      "family": "C_keyed_research_control_NOT_PRF",
+      "n": 10,
+      "epsilon": 0.0,
+      "p_key": 0.24999999999999994,
+      "p_competitor": 0.011962890624999997,
+      "gap": 0.23803710937499994
+    },
+    {
+      "family": "C_keyed_research_control_NOT_PRF",
+      "n": 10,
+      "epsilon": 0.05,
+      "p_key": 0.23754882812499994,
+      "p_competitor": 0.011413574218749997,
+      "gap": 0.22613525390624994
+    },
+    {
+      "family": "C_keyed_research_control_NOT_PRF",
+      "n": 10,
+      "epsilon": 0.1,
+      "p_key": 0.22509765624999994,
+      "p_competitor": 0.010864257812499997,
+      "gap": 0.21423339843749994
+    },
+    {
+      "family": "C_keyed_research_control_NOT_PRF",
+      "n": 10,
+      "epsilon": 0.25,
+      "p_key": 0.18774414062499994,
+      "p_competitor": 0.009216308593749997,
+      "gap": 0.17852783203124994
+    },
+    {
+      "family": "C_keyed_research_control_NOT_PRF",
+      "n": 10,
+      "epsilon": 0.5,
+      "p_key": 0.12548828124999997,
+      "p_competitor": 0.006469726562499998,
+      "gap": 0.11901855468749997
+    }
+  ]
+}

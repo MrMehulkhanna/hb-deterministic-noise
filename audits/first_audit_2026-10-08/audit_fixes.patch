@@ -1,0 +1,41 @@
+--- research_app.py	2026-10-08 18:17:48.851697226 +0530
++++ research_app_fixed.py	2026-10-08 18:19:24.650168074 +0530
+@@ -115,7 +115,7 @@
+         "p_competitor": best_comp,
+         "spectral_gap": gap,
+         "best_offset": best_u,
+-        "most_likely_output": int(secret_x ^ best_u if best_comp >= 0 else secret_x),
++        "best_competitor_output": int(secret_x ^ best_u),
+         "parseval": float(np.sum(h_hat ** 2)),
+     }
+ 
+@@ -210,10 +210,16 @@
+ # Sampling and bounds
+ # -----------------------------
+ 
+-def sample_mode(probabilities: np.ndarray, k: int, rng: np.random.Generator) -> int:
++def sample_mode(probabilities: np.ndarray, k: int, rng: np.random.Generator) -> int | None:
++    """Categorical mode estimator. Returns None when the empirical mode is tied.
++
++    Ties are reported as failures instead of being broken toward the smallest index:
++    np.argmax would silently favour low-numbered outputs (audit finding A1).
++    """
+     outcomes = rng.choice(probabilities.size, size=int(k), replace=True, p=probabilities)
+     counts = np.bincount(outcomes, minlength=probabilities.size)
+-    return int(np.argmax(counts))
++    top = np.flatnonzero(counts == counts.max())
++    return int(top[0]) if top.size == 1 else None
+ 
+ 
+ def repeated_success_curve(probabilities: np.ndarray, key: int, ks: Iterable[int], trials: int, seed: int) -> pd.DataFrame:
+@@ -244,6 +250,10 @@
+ 
+ 
+ def classical_heuristic_cost(n: int, p_key: float) -> float:
++    """n / P(key). NOTE (audit A3): this equals the classical active-attack cost for
++    *Bernoulli* HB, n/(1-2tau)^2. It is NOT a valid classical cost for deterministic
++    noise, where repeating a query returns the same error. Do not present it as a
++    classical-vs-quantum comparison for deterministic-LPN."""
+     if p_key <= 0:
+         return math.inf
+     return n / p_key
